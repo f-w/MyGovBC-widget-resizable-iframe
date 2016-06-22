@@ -5,7 +5,7 @@ const widgetModule = angular.module('mygov.widget.info.base', [])
     $stateProvider
       .state('sampleinfo', {
         url: '/sampleinfo',
-        template: '<sample-info></sample-info>'
+        template: '<sampleinfo></sampleinfo>'
       })
    
   }])
