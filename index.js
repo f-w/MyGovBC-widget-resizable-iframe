@@ -1,17 +1,18 @@
 'use strict';
 
 const widgetModule = angular.module('mygov.widget.info.base', [])
-  .config(['$stateProvider', function ($stateProvider) {
+  .config(['$stateProvider', function ($stateProvider, $log) {
     $stateProvider
-      .state('sample-info', {
-        url: '/sample/info',
+      .state('sampleinfo', {
+        url: '/sampleinfo',
         template: '<sample-info></sample-info>'
       })
    
   }])
-  .component('sample-info', {
+  .component('sampleinfo', {
     templateUrl: require('./index.html'),
     controller: ['$scope', function ($scope) {
+
     }]
   });
 
