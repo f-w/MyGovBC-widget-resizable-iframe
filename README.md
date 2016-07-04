@@ -59,12 +59,12 @@ Change the AngularJS state, i.e., how myGov navigates to your module:
 The behavior of a module often needs to vary from instance to instance. For instance,
 
 * a RESTful service url end point may differ from dev to prod,
-* you may want to enabl debug only on non-prod instances
-* you may want to define a "secret" variable that is not published in source code but avaialbe to a runtime instance
+* you may want to enable debug only on non-prod instances
+* you may want to define a "secret" variable that is not published in source code but available to a runtime instance
 
-`myGov` supports two ways to define instance-specific module configruations variables
+`myGov` supports two ways to define instance-specific module configuration variables
 
-1. Use `appConstants.runtimeEnv` to differentiate instance by environements: development, test, or production. `appConstants` is
+1. Use `appConstants.runtimeEnv` to differentiate instance by environments: development, test, or production. `appConstants` is
    defined in core module so your module has to add a dependency to it:
 
          const widgetModule = angular.module('mygov.widget.myorg.myservice', [require("_appRoot/core/core.module").name])
@@ -84,10 +84,10 @@ The behavior of a module often needs to vary from instance to instance. For inst
          });
      The advantage using this method is everything is under your control. The disadvantages, however, are:
 
-     1. you have to publish the variables, so it's unsuitable for secrets.
+     1. you have to publish the variables, so it's unsuitable for "secrets".
      2. there is no one-to-one mapping of runtimeEnv to instance so the method is only an approximation.
 
-2. Ask `mygov-core-client` maintainer to add your config varaiable, say `myWidgetSecret`, to appConstants section of local.js file of an instance. You can then reference it by `appConstants.myWidgetSecret`. Your module still needs to reference the core.module as shown in method 1. Because `local.js` is not published, you can define more confidential data. A word of warning however, the variable is only uglified/minified not encrypted. So don't expect end user cannot decode it.
+2. Ask `mygov-core-client` maintainer to add your config variable, say `myWidgetSecret`, to appConstants section of local.js file of an instance. You can then reference it by `appConstants.myWidgetSecret`. Your module still needs to reference the core.module as shown in method 1. Because `local.js` is not published, you can define more confidential data. A word of warning however, the variable is only uglified/minified not encrypted. So don't expect end user cannot decode it.
 
 
 ## Testing it out
