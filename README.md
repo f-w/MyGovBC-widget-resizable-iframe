@@ -56,11 +56,11 @@ Change the AngularJS state, i.e., how myGov navigates to your module:
 
 ## Defining instance-specific module configruations variables
 
-The behavior of a module often needs to vary from instance to instance. For instance,
+The behavior of a module often needs to vary from instance to instance. For reasons such as
 
 * a RESTful service url end point may differ from dev to prod,
-* you may want to enable debug only on non-prod instances
-* you may want to define a "secret" variable that is not published in source code but available to a runtime instance
+* only enable debug on non-prod instances
+* defining a "secret" variable that is not published in source code but available to a runtime instance
 
 `myGov` supports two ways to define instance-specific module configuration variables
 
