@@ -16,7 +16,7 @@
     "url": "https://github.com/GregTurner/mygov-widget-info-base/issues"
   },
   "homepage": "https://github.com/GregTurner/mygov-widget-info-base#readme",
-  "devDependencies": {
+  "dependencies": {
     "iframe-resizer": "^3.5.5"
   }
 }
