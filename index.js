@@ -5,8 +5,8 @@ let iFrameResize =  require('iframe-resizer').iframeResizer
 const widgetModule = angular.module('mygov.widget.info.base', [])
   .config(['$stateProvider', function ($stateProvider, $log) {
     $stateProvider
-      .state('sampleinfo', {
-        url: '/sampleinfo',
+      .state('resizable-iframe', {
+        url: '/resizable-iframe',
         template: '<sampleinfo></sampleinfo>'
       })
 
