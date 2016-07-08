@@ -1,5 +1,5 @@
 {
-  "name": "mygov-widget-info-base",
+  "name": "mygov-widget-resizable-iframe",
   "version": "0.1.0",
   "description": "super simple information only base",
   "main": "index.js",
