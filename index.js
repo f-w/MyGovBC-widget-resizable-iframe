@@ -1,6 +1,6 @@
 'use strict';
 
-let iFrameResize =  require('iframe-resizer').iframeResizer
+let iFrameResize = require('iframe-resizer').iframeResizer
 
 const widgetModule = angular.module('mygov.widget.info.base', [])
   .config(['$stateProvider', function ($stateProvider, $log) {
@@ -14,8 +14,12 @@ const widgetModule = angular.module('mygov.widget.info.base', [])
   .component('sampleinfo', {
     templateUrl: require('./index.html'),
     controller: ['$scope', function ($scope) {
-      $scope.$on('$viewContentLoaded', function() {
-        iFrameResize()
+      $scope.$on('$viewContentLoaded', function () {
+        iFrameResize({
+          messageCallback: function (messageData) {
+            alert(messageData.message)
+          }
+        })
       })
     }]
   });
