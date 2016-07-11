@@ -18,7 +18,8 @@ const widgetModule = angular.module('mygov.widget.info.base', [])
         iFrameResize({
           messageCallback: function (messageData) {
             alert(messageData.message)
-          }
+          },
+          heightCalculationMethod: 'bodyScroll'
         })
       })
     }]
