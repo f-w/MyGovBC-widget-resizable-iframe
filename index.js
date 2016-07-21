@@ -2,16 +2,16 @@
 
 let iFrameResize = require('iframe-resizer').iframeResizer
 
-const widgetModule = angular.module('mygov.widget.info.base', [])
+const widgetModule = angular.module('mygov.widget.iframe.base', [])
   .config(['$stateProvider', function ($stateProvider, $log) {
     $stateProvider
       .state('resizable-iframe', {
         url: '/resizable-iframe',
-        template: '<sampleinfo></sampleinfo>'
+        template: '<iframebase></iframebase>'
       })
 
   }])
-  .component('sampleinfo', {
+  .component('iframebase', {
     templateUrl: require('./index.html'),
     controller: ['$scope', function ($scope) {
       $scope.$on('$viewContentLoaded', function () {
