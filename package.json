@@ -1,5 +1,5 @@
 {
-  "name": "mygov-widget-resizable-iframe",
+  "name": "mygovbc-widget-resizable-iframe",
   "version": "0.1.0",
   "description": "super simple information only base",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/GregTurner/mygov-widget-info-base.git"
+    "url": "https://github.com/f-w/MyGovBC-widget-resizable-iframe.git"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/GregTurner/mygov-widget-info-base/issues"
+    "url": "https://github.com/f-w/MyGovBC-widget-resizable-iframe/issues"
   },
-  "homepage": "https://github.com/GregTurner/mygov-widget-info-base#readme",
+  "homepage": "https://github.com/f-w/MyGovBC-widget-resizable-iframe",
   "dependencies": {
     "iframe-resizer": "^3.5.5"
   }
